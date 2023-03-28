@@ -1,0 +1,31 @@
+1. inheritance ----> 
+
+    parents -----> [money,human trades]
+
+        |
+        |
+        |
+       <  >
+    Children 
+
+
+
+    In oops 
+
+    Base Class 
+        |
+        |
+        |
+       < >
+    Child Class 
+    
+    child class is inherting property from base class 
+
+    class cild extends Base{
+        
+    }
+
+    //when you are calling the constuctor of the child class then you have to 
+
+    
+

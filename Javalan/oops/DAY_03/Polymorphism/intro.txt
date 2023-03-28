@@ -1,0 +1,46 @@
+Poly morphism 
+
+Many ways to represent the same thing 
+
+
+
+
+Types of polymorphism
+
+
+1. compile Time/Static polymorphism
+    Achived via method overloading 
+
+    //opertor overloading is not available
+
+
+    Same name but aruments types and return types ordering an be different 
+
+
+2. runtime polymorphism 
+
+    Dynamic polymorphism ---> Actived by method overriding 
+    child class has the same method in child and the parent class 
+    
+
+
+    //types of the variable it can access is depends upon the left hand side 
+
+
+
+
+
+parent obj =new child();
+    //types of the method which will call actually depends on the object (which is made)
+    //this is known as Upcasting 
+
+
+This is known as overriding
+
+
+How it happens internally 
+
+Dynamic method Dispath ----> Very important 
+
+we need function in the parent as well as in chidl 
+

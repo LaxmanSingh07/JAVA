@@ -1,0 +1,6 @@
+packages in used to group related classes packages help in avoiding name confilicts 
+There are two types of packages
+Built in packages  ---> java api
+User defined packages  ----> custom packagess
+
+

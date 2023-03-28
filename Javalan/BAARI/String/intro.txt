@@ -1,0 +1,12 @@
+String are immuatable in the javascript 
+
+what is pool in the java 
+
+int length()
+String toLowerCase()
+String toUpperCase()
+String trime()
+String substring(int begin)
+String substring(int begin, int end)
+String replace(char old,char new) ---> all the letters 
+boolean startsWith(String s);

@@ -1,0 +1,88 @@
+
+Types of ingeritance 
+
+1. Single inheritance ---> One class extends another class 
+
+            Box
+             |
+             |
+             |
+             |
+            < >
+         Boxweight 
+
+2. Multilevel inheritance ----> 
+
+                A
+                |
+                |
+                |
+                |
+               <B>   
+                |
+                |
+                |
+                |
+               <C>
+                
+
+
+
+3. Multilevel inheritance --> One class extacity more than 1 classes ........................NOT ALLOWED IN JAVA
+
+            A             B
+            |             |
+            |             |
+            |             |
+             -------------
+                    |
+                    |
+                    |
+                   < >
+                    C
+
+//what if both the parent have a vaiable n 
+//then how will child will decided which one should i choose 
+
+//Not ALLOWED in JAVA 
+
+
+c obj =new c();
+c.n; //?            
+            
+
+//then how will you do it 
+
+
+will be cover in the topic which is known as the interfaces 
+
+
+4. Hierachial inheritance: -
+
+    Onc classes is inherited by many class 
+
+                        A
+                        |
+          ------------------------------
+         |              |               |
+         |              |               |
+         |              |               |
+         |              |               |
+        <B>            <C>             <D>
+
+
+5. Hybrid interitance 
+
+    Combination of single and Multiple inheritance
+
+    //Not in java check interfaces 
+
+
+                        A
+                          |
+          ------------------------------
+         |              |               |
+         |              |               |
+         |              |               |
+         |              |               |
+        <B>            <C>             <D>
