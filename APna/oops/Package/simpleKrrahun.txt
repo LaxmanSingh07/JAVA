@@ -1,0 +1,134 @@
+str.charAt()
+str.codePointAt() // get the character (unicode code point)
+str.length()
+str.toUpperCase()
+str.toLowerCase()
+
+str.indexOf() ---> this method is used to
+
+String first="java"
+String second="Progrmming"
+
+String joinedString=first.concat(second);   
+boolean result1 = first.equals(second);
+boolean result=first.contains("java") //check wheather the specified string (sequence of characters ) is present in the 
+
+
+
+String name = new String("Java String time aa gya");
+boolean result=name.contains("aa");
+
+System.out.println(str1.substring(0,4)); //extract substring from index 0 to 3
+
+
+
+class Main {
+  public static void main(String[] args) {
+    String str1 = "I";
+    String str2 = "love";
+    String str3 = "Java";
+
+    // join strings with space between them
+    String joinedStr = String.join(" ", str1, str2, str3);
+
+    System.out.println(joinedStr);
+  }
+}
+
+// Output: I love Java
+
+
+
+Syntax of join()
+The syntax of the string join() method is either:
+
+String.join(CharSequence delimiter, 
+            Iterable elements)
+or
+
+String.join(CharSequence delimiter, 
+            CharSequence... elements)
+
+
+indexOf are of two types first with fromIndex and second is with fromIndex
+
+
+
+Java String compareTo()
+
+The compareTo() method compares two strings lexicographically (in the dictionary order). The comparison is based on the Unicode value of each character in the strings.
+
+
+
+compareTo() Parameters
+The compareTo() method takes a single parameter.
+
+str - the string to be compared
+
+
+
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+   Scanner sc=new Scanner(System.in);
+   String s1,s2;
+   s1=sc.nextLine();
+   s2=sc.nextLine();
+   System.out.println("Compare Result"+s1.compareTo(s2));
+  }
+}
+
+
+compareTo() Return Value
+returns 0 if the strings are equal
+returns a negative integer if the string comes before the str argument in the dictionary order
+returns a positive integer if the string comes after the str argument in the dictionary order
+
+
+
+if we want to ignore the case in the string then we have to use the string method 
+
+compareToIgnoreCase()
+
+toCharArray ----> converts the string to a char array and return it 
+
+class Main {
+  public static void main(String[] args) {
+    String str = "Java Programming";
+
+    // creating a char array
+    char[] result;
+
+    result = str.toCharArray();
+    System.out.println(result); // Java Programming
+  }
+}
+
+
+
+The startsWith() method checks whether the string begins with the specified string or not.
+
+
+string.startsWith(String str, int offset)
+
+
+endsWith() Return Value
+returns true if the string ends with the given string
+returns false if the string doesn't end with the given string
+
+
+
+//to check wheather the string is empty or not 
+
+class Main {
+  public static void main(String[] args) {
+
+    String str1 = "Java Programming";
+    String str2 = "";
+
+    System.out.println(str1.isEmpty()); // false
+    System.out.println(str2.isEmpty()); // true
+
+  }
+}
+
