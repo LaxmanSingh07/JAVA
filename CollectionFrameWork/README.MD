@@ -127,3 +127,33 @@ add(E c)
 .offer(E c) // it returns false if the queue is full
 ```
 
+## TreeMap
+
+`TreeMap` is the implementation class of `Map Interface`.
+
+If we want to represent a group of objects as key-value pairs then we should go for `Map Interface`.
+
+
+It will store the objects based on some sorting order of keys.
+
+
+## HashMap
+
+
+`HashMap` is the implementation class of `Map Interface`.
+
+It will store the objects based on `hashcode` of keys.
+
+
+## Linked HashMap
+
+
+The LinkedHashMap Class is just like HashMap with an additional feature of maintaining an order of elements inserted into it.
+
+
+1. order Insertion
+2. order Access 
+
+Eg: if limit is 3 and we add 4th element then the 1st element will be removed in case of order insertion.
+
+Eg: if limit is 3 and we access 4th element then the 1st element will be removed in case of order access.
