@@ -14,6 +14,7 @@ class MyFrame extends Frame implements ItemListener {
 
         cbg=new CheckboxGroup();
 
+        //false is used to wheather the checkbox is intial selected 
         c1 = new Checkbox("Java" ,false,cbg);
         c2 = new Checkbox("Python" ,false,cbg);
         c3 = new Checkbox("C#" ,false,cbg);

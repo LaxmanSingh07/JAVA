@@ -68,3 +68,29 @@ ContainerEvent  Generated when a component              ContainerListener
 
 
 ```
+
+## Event Delegation Model
+
+##### Component 
+
+    Button (all the components)
+    (i) Properties
+    (ii) Methods
+    (iii) Events
+
+        |
+        |
+        |
+
+    Listener (Receiver) 
+
+
+In `the` `Delegation model`, a `source generates` an `event` and `forwards it` to `one or more listeners`, where the listener waits until `they receive an event`. `Once the listener gets the event`, `it is processed by the listener`, and then they return it. The UI elements can `delegate` an `event's processing` to a `separate function`.
+
+This approach is more `convenient than the event model` (Java 1.0) because the events will only be received by the listeners who want to receive them in the `delegation event model`.
+
+`The essential advantage of the Delegation Event Model is that the application logic is completely separated from the interface logic.`
+
+`Registering` the `Source` With `Listener` in `Delegation` `Event Model`
+
+The different Classes provide different registration methods.
