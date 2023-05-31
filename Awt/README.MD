@@ -94,3 +94,28 @@ This approach is more `convenient than the event model` (Java 1.0) because the e
 `Registering` the `Source` With `Listener` in `Delegation` `Event Model`
 
 The different Classes provide different registration methods.
+
+## Layout Managers
+
+- flowLayout
+- borderLayout
+- gridLayout
+- gridBag
+- cardLayout
+
+
+
+- flowLayout : The FlowLayout is used to arrange the components in a line, one after another (in a flow). It is the default layout of applet or panel. It simply lays out components in a single row that wraps at the end.
+
+ye can align the components in the center, left or right of the container. The default alignment is center.
+
+Once it touch the right border of the container, it will wrap to the next line. It will not expand to fill the space.
+
+- borderLayout : The BorderLayout is used to arrange the components in five regions: north, south, east, west and center. Each region (area) may contain one component only. `It is the default layout of frame or window`. The BorderLayout provides five constants for each region:
+
+- GridLayout : The GridLayout is used to arrange the components in rectangular grid. One component is displayed in each rectangle.
+
+- gridBag : The GridBagLayout is used to arrange the components in rectangular grid. But it is flexible than GridLayout. It is the most complex layout manager.
+
+- CardLayout : The CardLayout is used to switch between the components. It treats each component as a card that is why it is known as CardLayout. The CardLayout provides three methods to switch between the components:
+
