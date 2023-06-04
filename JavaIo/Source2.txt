@@ -1,0 +1,10 @@
+HTML (Hypertext Markup Language) is a standard markup
+language used to create web pages. It is used to structure and
+format content on the web, including text, images, and other
+multimedia elements. HTML consists of a series of elements that
+are represented by tags, which are used to define the structure
+and content of a webpage.
+HTML is an essential part of the web development process and is
+used to create the structure and content of websites. It is a
+fundamental skill for web developers and is used to create the
+majority of websites on the internet.
