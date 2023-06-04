@@ -292,4 +292,35 @@ and will be run more often.
 3. void yeild() : causes the currently executing thread to yield to another thread.
 4. void dumpStack() : prints the stack trace of the current thread.
 
- 
+## Synchronisation in java
+
+1. Resource Sharing 
+
+Resource Sharing is the process of sharing the resources of the system between multiple processes.
+
+2. Critical Section 
+
+Critical Section 
+
+3. Mutual Exclusion
+
+Two or more processes cannot access the same resource at the same time. 
+
+How to achieve mutual exclusion?
+
+4. Locking /mutex 
+
+Locking is the process of locking the resource so that only one process can access the resource at a time.
+Mutex is a lock that is used to achieve mutual exclusion. 
+
+5. Semaphore
+
+Semaphore is a variable that is used to achieve mutual exclusion.
+This variable is used to control the access of the resource by the processes.
+
+wait() and signal() are the two methods that are used to control the access of the resource by the processes.
+
+
+## Inter-thread communication
+
+Inter-thread communication is the process of communication between two or more threads.
