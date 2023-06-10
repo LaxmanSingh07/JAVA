@@ -16,7 +16,10 @@ class MyThread extends Thread {
             System.out.println(count + " Hello");
             count++;
             try {
-                Thread.sleep(1000);
+                //This method throws interrupted exception
+                // We have to handle it
+                // Thread.sleep(45);
+                Thread.sleep(1000); // for interrupt method
             } catch (InterruptedException e) {
                 System.out.println(e);
             }
@@ -31,12 +34,15 @@ class Demo02_threadTest {
         MyThread m = new MyThread("Singh");
         // m.start();
 
-        // System.out.println(m.getId());
-        // System.out.println(m.getPriority());
-        // System.out.println(m.getName());
-        // m.start();
-        // System.out.println(m.getState());
-        // System.out.println(m.isAlive());
+        // methods of thread class
+        /*
+         * System.out.println("ID "+ m.getId()); // it will given by the JVM
+         * System.out.println("Name "+m.getName());
+         * System.out.println("Priority "+m.getPriority());
+         * m.start();
+         * System.out.println("State "+ m.getState());
+         * System.out.println("Alive "+m.isAlive());
+         */
 
         // SLEEP METHOD
 
@@ -44,7 +50,7 @@ class Demo02_threadTest {
 
         // interrupt method
 
-        m.interrupt();
+        m.interrupt(); // it will interrupt the thread
 
     }
 }

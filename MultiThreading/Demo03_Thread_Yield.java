@@ -18,6 +18,7 @@ public class Demo03_Thread_Yield {
         while (true) {
             System.out.println("main " + count++);
             Thread.yield(); // it will allow to give more time to the other thread 
+            // More time will be given to the other thread
         }
     }
 }

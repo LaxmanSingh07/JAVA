@@ -1,5 +1,6 @@
 class MyData {
-   synchronized public void display(String str) {
+    
+  synchronized  public void display(String str) {
 
         // synchronized(this)
         // {
@@ -9,7 +10,7 @@ class MyData {
                 //even i will use the sleep method then also it will run 
 
                 try{
-                    Thread.sleep(100);
+                    Thread.sleep(10);
                 }
                 catch(InterruptedException e){
                     System.out.println(e);
