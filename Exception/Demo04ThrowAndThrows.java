@@ -6,6 +6,8 @@ class NegativeDimensionException extends Exception {
     }
 }
 
+// throws is used for the checked exception
+
 public class Demo04ThrowAndThrows {
 
     static int meth1() {
@@ -24,6 +26,7 @@ public class Demo04ThrowAndThrows {
 
     static int area(int l, int b) throws NegativeDimensionException {
         if (l < 0 || b < 0)
+            // It is a checked exception
             throw new NegativeDimensionException();
         return l * b;
     }
@@ -35,17 +38,14 @@ public class Demo04ThrowAndThrows {
     public static void main(String args[]) throws NegativeDimensionException {
 
         // try {
-        //     meth3();
+        // meth3();
         // } catch (Exception e) {
-        //     System.out.println(e);
+        // System.out.println(e);
         // }
 
-        
-        try{
-        meth4();
-        }
-        catch(NegativeDimensionException e)
-        {
+        try {
+            meth4();
+        } catch (NegativeDimensionException e) {
             System.out.println(e);
         }
     }

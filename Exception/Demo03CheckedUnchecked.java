@@ -11,6 +11,8 @@ class LowBalanceException extends Exception
 }
 public class Demo03CheckedUnchecked {
     static void fun1() {
+
+
         // try{
         // System.out.println(10 / 0);
         // }
@@ -19,9 +21,16 @@ public class Demo03CheckedUnchecked {
         //     System.out.println(e.getMessage());
         //     e.printStackTrace();
         // }
+
+        //Checked Exception
         
-        // FileInputStream f1=new FileInputStream("My.txt");
+        // FileInputStream f1=new FileInputStream("My.txt"); // file not found exception checked exception
+       
+       
+       
         try{
+
+            //As it is driving from the Exception class so it is checked exception
         throw new LowBalanceException(); //this is checked exception
         }
         catch(LowBalanceException e)

@@ -13,6 +13,7 @@ public class Demo01 {
         try{
         c=a/b;
         System.out.println(c);
+        sc.close();
         }
 
         catch(ArithmeticException e){

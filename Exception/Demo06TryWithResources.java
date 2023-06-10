@@ -7,7 +7,9 @@ public class Demo06TryWithResources {
 
     static void Divide() throws Exception {
 
-        try (FileInputStream f1 = new FileInputStream("My.txt"); Scanner sc = new Scanner(f1)) {
+        //Try with resources
+        
+        try (FileInputStream f1 = new FileInputStream("My.txt"); Scanner sc = new Scanner(f1);) {
             int a = sc.nextInt();
             int b = sc.nextInt();
             System.out.println(a / b);
