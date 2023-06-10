@@ -53,7 +53,7 @@ class Consumer extends Thread {
     }
 }
 
-public class file07_Piped_input_Stream {
+public class file_07_Piped_input_Stream {
     public static void main(String[] args) {
         PipedInputStream pis = new PipedInputStream();
         PipedOutputStream pos = new PipedOutputStream();

@@ -2,7 +2,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 
-public class file08_FileClass {
+public class file_08_FileClass {
     public static void main(String[] args) {
         // File f = new File("Source2");
         // System.out.println(f.exists());

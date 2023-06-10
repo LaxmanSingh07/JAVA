@@ -64,3 +64,30 @@ The OutputStream is used to `write data to a destination`. In other words, we ca
 | Constructor | Description |
 |-|-|
 | FileOutputStream(String name) | It is used to create a file output stream to write to the file represented by the specified File object. |
+
+
+## Serialization
+
+
+Let's Take an example 
+
+
+```java
+class Student
+{
+   int id;
+   String name;
+   String dept;
+}
+
+class MyWrite
+{
+   public static void main(String args[])
+   {
+      FileOutputStream fos = new FileOutputStream("student.txt");
+      PrintS
+   }
+}
+
+```
+
