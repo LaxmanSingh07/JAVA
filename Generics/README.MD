@@ -1,8 +1,13 @@
 ## What is Generics
 
-As we know the Object is the parent of all the classes in java . So we can pass any type of object to the method and we can perform the operation on it . But the problem is that we have to type cast the object to the specific type . So to overcome this problem we have Generics in java .
+Java provides a parent class of all the classes in java . The name of the class is `Object` .
+
+As we know the `Object is the parent` of all the classes in java . So we can pass any `type of object` to the method and we can perform the operation on it . But the problem is that we have to type cast the object to the specific type . So to overcome this problem we have Generics in java .
 
 if you have a reference of an object,you can assign the object of any type object to it . But if you want to restrict the type of object that can be used in a particular class or method , we use generics .
+
+
+
 
 ```java
 Object obj=new String("Hello");
@@ -108,6 +113,7 @@ class MyArray<T extends A&B&C>
 
 ````
 4. extends and super are allwoed with wildcards ( ? ) in Generics methods but not in Generics class definition.
+   
 5. <?> will accept all objects but can't 
    access.
    null is allowed.
@@ -132,4 +138,23 @@ public class GenericsDemo{
 }
 
 ```
-1. Base type of an Object should be same or ?
+6. Base type of an Object should be same or ?   
+
+
+```java
+public class GenericsDemo{
+
+    static void fun(MyArray <?>obj)
+    {
+        obj.append("Hello"); // not allowed
+        obj.append(null); // allowed
+    }
+    public static void main(String[] args) {
+        MyArray<String> m=new MyArray<String>();
+        MyArray<?> m=new MyArray<String>(); // you can't access 
+        fun(m);
+        
+    }
+}
+
+```

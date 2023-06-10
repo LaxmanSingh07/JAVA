@@ -2,9 +2,12 @@ class A{}
 class B extends A{}
 class C extends A{}
 
-//if i write something like 
+//if I write something like 
 // <T extends A> then it will work for those classes which are interting from the A
     
+//if a class either extends or implements a class or interface then it will be called as a subclass
+//and we have to use the extends keyword for the subclass
+ 
 class MyArray<T extends Number> {
     @SuppressWarnings("unchecked")
     T A[] = (T[]) new Object[10];
@@ -25,12 +28,22 @@ class MyArray<T extends Number> {
 
 // }
 
-// // subclass is alsogenerice
+// // subclass is also generice
 // class MyArray3<T> extends MyArray<T>{
 
 // }
 
-public class Gneeric_03_03 {
+class MyThread<T extends A> extends Thread{
+    T obj;
+    MyThread(T obj){
+        this.obj=obj;
+    }
+    public void run(){
+        System.out.println(obj);
+    }
+}
+
+public class Generic_03_04 {
     public static void main(String args[]) {
 
         //MyArray2 before bounds 
@@ -45,6 +58,9 @@ public class Gneeric_03_03 {
         k.append(34.56f);
 
         k.display();
+
+        MyThread<A> t1=new MyThread<>();
+
 
 
     }

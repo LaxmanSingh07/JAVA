@@ -1,4 +1,6 @@
-class MyArray<T> {
+//Muliple parameters 
+ 
+class MyArray<T, K> {
     @SuppressWarnings("unchecked")
     T A[] = (T[]) new Object[10];
     int length = 0;
@@ -14,14 +16,13 @@ class MyArray<T> {
     }
 }
 
-public class Generic_03_Bounds {
+
+
+
+public class Generic_03_Bouns_02 {
     public static void main(String[] args) {
-        
-        MyArray ma=new MyArray(); 
-        //it will refer to the object 
-        
-        ma.append(10);
-        ma.append("SomeGroup");
-        ma.display();
+        // If I will not mention anything then it will take Object as a type
+        MyArray<Integer, String> a = new MyArray<>();
+
     }
 }
