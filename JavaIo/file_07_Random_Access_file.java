@@ -12,7 +12,7 @@
 
 import java.io.*;
 
-public class file07_Random_Access_file {
+public class file_07_Random_Access_file {
     public static void main(String[] args) {
         try {
             RandomAccessFile rf = new RandomAccessFile("Source2.txt", "rw");
