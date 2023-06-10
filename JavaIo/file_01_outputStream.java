@@ -6,24 +6,35 @@ import java.io.IOException;
 
 public class file_01_outputStream {
     public static void main(String[] args) {
-        try {
-            FileOutputStream fos = new FileOutputStream("sample.txt");
+        try (FileOutputStream fos = new FileOutputStream("sample.txt");)// here we have to give the path of the file
+        {
+
             String str = "Learn java programming";
+
+            
             // fos.write(str.getBytes());
+
+
+            byte b[] = str.getBytes();//to convert the string into byte array
             // System.out.println(b);
-            byte b[] = str.getBytes();
 
             // for-each loop
 
-            for (byte it : b) {
-                fos.write(it);
-            }
+            //one by one byte write
+            // for (byte it : b) {
+            // fos.write(it);
+            // }
 
             // file write with offset
 
-            // fos.write(b, 6, str.length() - 6);
+            // first arguemnt is byte array
+            // second argument is offset
+            // third argument is length
+            fos.write(b, 6, str.length() - 6);
 
-            fos.close();
+            // fos.close(); // i have used try with resource so i dont need to close the
+            // file
+
         } catch (FileNotFoundException e) {
             System.out.println(e);
         } catch (IOException e) {

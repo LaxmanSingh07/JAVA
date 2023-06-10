@@ -6,9 +6,8 @@ import java.io.FileOutputStream;
 //copy the content of the source.txt to destination.txt 
 public class file_03_Copy_File {
     public static void main(String[] args) {
-        try {
-            FileInputStream fis = new FileInputStream("Source.txt");
-            FileOutputStream fos = new FileOutputStream("Destination.txt");
+        try (FileInputStream fis = new FileInputStream("Source.txt");
+                FileOutputStream fos = new FileOutputStream("Destination.txt");) {
 
             int b;
 
@@ -19,8 +18,6 @@ public class file_03_Copy_File {
                     fos.write(b);
             }
 
-            fis.close();
-            fos.close();
         } catch (Exception e) {
             System.out.println(e);
 
