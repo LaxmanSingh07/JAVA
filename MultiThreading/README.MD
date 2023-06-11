@@ -570,5 +570,4 @@ Avoid race condition.
 
 we will use a count variable to keep track of which thread's turn.
 
-### Program code for the producer-consumer problem
 

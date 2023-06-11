@@ -22,8 +22,14 @@ class MyFrame extends Frame {
         add(l1);
         add(tf);
         add(l2);
-    }
+        addWindowListener(new WindowAdapter() {
+            public void windowClosing(WindowEvent e) {
+                dispose();
+            }
+        });
 
+    }
+    
     class Handler implements TextListener, ActionListener {
 
         @Override
