@@ -6,6 +6,14 @@ AWT stands for Abstract Window Toolkit. It is a platform dependent API for creat
 
 Frame is a class of java.awt package. It is used to create `top level window`. It is the `container` that contains `all the objects such as buttons`, labels, textfields etc. It has no constructors.
 
+
+`Types of Constructors` 
+
+- Frame() : creates a frame with no title and specified layout.
+- Frame(String title) : creates a frame with specified title and default layout.
+- Frame(String title, LayoutManager layout) : creates a frame with specified title and layout.
+- Frame(GraphicsConfiguration config) : creates a frame with the specified graphics configuration.
+
 ## Label
 
 Label is a class of java.awt package. It is used to create a `label` that is a `non-editable text field`. It is used to display a `single line of read only text`. It has two constructors.
@@ -24,16 +32,13 @@ Component generates the event. The event is passed to the object that implements
 
 ## When, Which Event is generated?
 
-```
 
-Event          Description                           Listner Interface
 
-ActionEvent    Generated when                          ActionListener
-               a button is clicked,
-               a menu item is clicked,
-               a text fieldS is a list
-               item is double clicked,
-               pressed enter key.
+|Event |         Description |                          Listner Interface|
+|:--:|:-:|:-:|
+
+|ActionEvent|Generatedwhen a button is clicked,
+a menu item is clicked,a text fieldS is a list item is double clicked,pressed enter key.| ActionListener|
 
 MouseEvent     Generated when mouse                    MouseListener,
                is moved, dragged,
@@ -67,7 +72,6 @@ ContainerEvent  Generated when a component              ContainerListener
                from a container.
 
 
-```
 
 ## Event Delegation Model
 
@@ -94,6 +98,23 @@ This approach is more `convenient than the event model` (Java 1.0) because the e
 `Registering` the `Source` With `Listener` in `Delegation` `Event Model`
 
 The different Classes provide different registration methods.
+
+
+## Checkbox and CheckboxGroup
+
+`Checkbox` is a class of java.awt package. It is used to create a checkbox. It is used to turn an option on (true) or off (false). It has two constructors.
+
+- Checkbox() : creates a checkbox with no label.
+- Checkbox(String label) : creates a checkbox with the specified label.
+
+`checkboxgroup` is a class of java.awt package. It is used to create a group of checkboxes. It is used to turn on one option out of many options. It has no constructors.
+
+## TextField
+
+`TextField` is a class of java.awt package. It is used to create a textfield that allows the user to enter a single line of text. It is a lightweight component that allows the editing of a single line text. It has two constructors.
+
+- TextField() : creates a textfield with 0 columns.
+- TextField(int columns) : creates a textfield with the specified number of columns.
 
 ## Layout Managers
 

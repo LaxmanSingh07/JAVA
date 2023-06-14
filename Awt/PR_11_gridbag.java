@@ -16,6 +16,9 @@ class MyFrame extends Frame {
         b6 = new Button("Six");
 
         //before adding the constrains
+        
+
+        // x-y position
 
         gbc.gridx=1;
         gbc.gridy=1;

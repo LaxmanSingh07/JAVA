@@ -15,9 +15,11 @@ class MyFrame extends Frame {
         // this is not the way to use the border layout
         add(b1, BorderLayout.NORTH);
         add(b2, BorderLayout.SOUTH);
-        // add(b3,BorderLayout.EAST);
+        add(b3,BorderLayout.EAST);
         add(b4, BorderLayout.WEST);
         add(b5, BorderLayout.CENTER);
+
+        //Panel is a container that can hold multiple components
 
         Panel p = new Panel();
         p.setLayout(new GridLayout(3,1));

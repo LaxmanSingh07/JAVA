@@ -1,4 +1,5 @@
 import java.awt.*;
+//By Default BorderLayout is layout of a frame
 class MyFrame extends Frame{
     Button b1,b2,b3,b4,b5,b6;
     public MyFrame()

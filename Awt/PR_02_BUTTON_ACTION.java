@@ -10,12 +10,11 @@ class MyFrame extends Frame implements ActionListener {
 
     public MyFrame() {
         super("Button Demo");
-        lbl1 = new Label(" " + count);
+        lbl1 = new Label(" " + count); // we have to set the String value that's why we use " " + count
         btn1 = new Button("Click");
 
         btn1.addActionListener(this);// this class ActionListner
         setLayout(new FlowLayout());
-
         add(lbl1);
         add(btn1);
 
@@ -31,7 +30,7 @@ class MyFrame extends Frame implements ActionListener {
 
 public class PR_02_BUTTON_ACTION {
     public static void main(String args[]) {
-        MyFrame f=new MyFrame();
+        MyFrame f = new MyFrame();
         f.setSize(400, 400);
         f.setVisible(true);
     }

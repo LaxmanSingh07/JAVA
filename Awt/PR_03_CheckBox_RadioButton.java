@@ -14,15 +14,24 @@ class MyFrame extends Frame implements ItemListener {
 
         cbg=new CheckboxGroup();
 
-        //false is used to wheather the checkbox is intial selected 
+
+
+        // This is for the checkbox 
+
+        // c1 = new Checkbox("Java");
+        // c2 = new Checkbox("Python");
+        // c3 = new Checkbox("C#");
+
+       
+        // This is for the checkbox group
+       
+        //false/true (second param) -> it is used to set the state of the checkbox
+        // is used to wheather the checkbox is intial selected 
         c1 = new Checkbox("Java" ,false,cbg);
         c2 = new Checkbox("Python" ,false,cbg);
         c3 = new Checkbox("C#" ,false,cbg);
 
 
-        // c1 = new Checkbox("Java");
-        // c2 = new Checkbox("Python");
-        // c3 = new Checkbox("C#");
 
         c1.addItemListener(this);
         c2.addItemListener(this);
@@ -40,7 +49,7 @@ class MyFrame extends Frame implements ItemListener {
         // e.getItem();// it will give the reference of the button which is clicked
 
         String str = "";
-        if (c1.getState())
+        if (c1.getState()) //getState() is used to check wheather the checkbox is selected or not
             str = str + " " + c1.getLabel();
         if (c2.getState())
             str = str + " " + c2.getLabel();

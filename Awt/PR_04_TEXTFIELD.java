@@ -34,12 +34,12 @@ class MyFrame extends Frame {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            l1.setText(tf.getText());
+            l2.setText(tf.getText());
         }
 
         @Override
         public void textValueChanged(TextEvent e) {
-            l2.setText(tf.getText());
+            l1.setText(tf.getText());
         }
 
     }
