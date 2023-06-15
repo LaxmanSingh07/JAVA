@@ -31,11 +31,19 @@ It is a collection of an ordered and duplicate elements. It is an interface that
 
 ### 2.Queue Interface
 
-It is used to hold the elements `about to be processed` and `provides various operations` like the `insertion, removal etc`. It is an interface that extends the collection interface.
+This interface `Work on the principle of FIFO` (First In First Out). It is an interface that extends the collection interface.
 
 #### 2.1 Deque Interface
 
 It is a double ended queue that supports addition or removal of elements from either end of the data structure. It is an interface that extends the queue interface.
+
+#### 2.1.1 ArrayDeque
+
+It is a resizable array that supports addition or removal of elements from either end of the data structure. It is an implementation class of the deque interface.
+
+#### 2.2 Priority Queue
+
+It is an unbounded queue that supports the `comparable interface`. It is an interface that extends the queue interface.
 
 ### 3. Set Interface
 
@@ -73,19 +81,22 @@ All `the classes and interfaces` for the collection framework are available in `
 
 //all the methods are generic by default and can be used with any type of collection.
 
+//HERE E IS THE TYPE OF COLLECTION
+// o is the object
 
 add(E o)
 addAll(Collection<E>o)
-remove(Object o)
-removeAll(Collection<E>o)
-retainAll(Collection<E>o)
-clear()
-contains(Object o)
-containsAll(Collection<E>o)
-isEmpty()
-size()
-toArray()
-iterator()
+remove(Object o) // it will return true if the object is removed
+removeAll(Collection<E>o) 
+retainAll(Collection<E>o) // delete all the elements except the elements present in the collection
+clear() // delete all the elements
+isEmpty() // return true if the collection is empty
+contains(Object o) // return true if the collection contains the object
+containsAll(Collection<E>o) // return true if the collection contains all the elements of the collection
+size() // return the number of elements in the collection
+toArray() // convert the collection into an array
+iterator() // return the iterator object that can be used to iterate the elements of the collection
+
 
 
 ```
@@ -96,33 +107,45 @@ iterator()
 
 If we want to represent a group of individual objects as a single entity where duplicates are allowed and insertion order must be preserved then we should go for `List Interface`.
 
+
+`All Methods of Collection` + `List Interface Methods`
+
 ```java
 
 add (int index, Object o)
 addAll(int index, Collection<E> c)
 remove(int index)
 get(int index)
-set(int index, Object o)
+set(int index, Object o) // it will not shift the elements but will change the value of the element at the given index
 subList(int fromIndex, int toIndex)
-indexOf(Object o)
-lastIndexOf(Object o)
+indexOf(Object o) // return the index of the first occurrence of the object
+lastIndexOf(Object o) // return the index of the last occurrence of the object
 listIterator() //bidirectional
 listIterator(int index)
 ```
 
+## Set Interface 
+
+`Set Interface` is the child interface of `Collection interface`. 
+
+It doesn't allow duplicates. If we want to represent a group of individual objects as a single entity where duplicates are not allowed and insertion order is not preserved then we should go for `Set Interface`.
+
+set has no new methods other than Collection interface methods.
 
 ## Queue Interface
 
 `Queue Interface` is the child interface of `Collection interface`.
 
+`FIFO` (First In First Out) is the default nature of the queue.
+
 If we want to represent a group of individual objects prior to processing then we should go for `Queue Interface`.
 
-```java 
+```java
 
 add(E c)
-.poll()
-.remove() // it throws an exception if the queue is empty NoSuchElementException 
-.peek() // first object in queue
+.poll() // it will remove the first object in queue if the queue is empty it will return null
+.remove() // it throws an exception if the queue is empty NoSuchElementException
+.peek() // It will return the first object in queue if the queue is empty it will return null
 .element() // first object in queue // it throws an exception if the queue is empty NoSuchElementException
 .offer(E c) // it returns false if the queue is full
 ```
@@ -133,26 +156,20 @@ add(E c)
 
 If we want to represent a group of objects as key-value pairs then we should go for `Map Interface`.
 
-
 It will store the objects based on some sorting order of keys.
 
-
 ## HashMap
-
 
 `HashMap` is the implementation class of `Map Interface`.
 
 It will store the objects based on `hashcode` of keys.
 
-
 ## Linked HashMap
-
 
 The LinkedHashMap Class is just like HashMap with an additional feature of maintaining an order of elements inserted into it.
 
-
 1. order Insertion
-2. order Access 
+2. order Access
 
 Eg: if limit is 3 and we add 4th element then the 1st element will be removed in case of order insertion.
 

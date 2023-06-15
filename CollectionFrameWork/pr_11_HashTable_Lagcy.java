@@ -1,4 +1,5 @@
 import java.util.*;
+// It is old version of HashTable
 
 public class pr_11_HashTable_Lagcy {
     public static void main(String[] args) {

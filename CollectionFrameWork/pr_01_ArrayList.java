@@ -30,6 +30,10 @@ public class pr_01_ArrayList {
         // for each
         System.out.println();
 
+        for (var x : al1) {
+            System.out.print(x + " ");
+        }
+
         for (Integer x : al1) { // we can use the var
             System.out.print(x + " ");
         }
@@ -46,19 +50,19 @@ public class pr_01_ArrayList {
         Iterator<Integer> it = al1.iterator();
         System.out.println();
 
+        // it.hashNext ()will check if there is any element left or not
         while (it.hasNext()) {
             System.out.print(it.next() + " ");
 
         }
 
-        //list iterator 
+        // list iterator
 
-        ListIterator<Integer>it1=al1.listIterator();
+        ListIterator<Integer> it1 = al1.listIterator();
 
-        while(it1.hasNext()){
-            System.out.println(it1.next()+" ");
+        while (it1.hasNext()) {
+            System.out.println(it1.next() + " ");
         }
 
-        
     }
 }

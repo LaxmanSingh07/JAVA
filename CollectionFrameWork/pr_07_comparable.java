@@ -1,4 +1,5 @@
 import java.util.*;
+
 class Point implements Comparable{
     int x, y;
 
@@ -17,7 +18,7 @@ class Point implements Comparable{
         if(this.x<p.x){
             return -1;
         }
-        else if(this.y<p.y){
+        else if(this.x>p.x){
             return 1;
         }
         else {
@@ -41,9 +42,9 @@ public class pr_07_comparable {
     public static void main(String[] args) {
         
         TreeSet<Point> ts=new TreeSet<>();
-        ts.add(new Point(1,1));
         ts.add(new Point(5,5));
         ts.add(new Point(5,12));
+        ts.add(new Point(1,1));
         
         System.out.println(ts);
         // System.out.print
