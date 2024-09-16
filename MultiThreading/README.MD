@@ -346,6 +346,7 @@ A thread that runs in the background. It provides services to the user thread. I
 3. `void join()` : waits for the thread to die.
 4. `void join(long millis)` : waits for the thread to die for the specified time.
 5. `void run()`
+6. `void interrupt()`
 
 ### Static methods
 
